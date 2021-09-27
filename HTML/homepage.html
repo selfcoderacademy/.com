@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Biriyani Haven</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="../CSS/homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../CSS/style1.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/lightslider.css">
+    <script type="text/javascript" src="../JS/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="../JS/lightslider.js"></script>
+
+    <script>
+	  $(document).ready(function() {
+    $('#autoWidth').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cS-hidden');
+        } 
+    });  
+  });
+	</script>
+	<script>
+	  $(document).ready(function() {
+    $('#autoWidth1').lightSlider({
+        autoWidth1:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth1').removeClass('cS-hidden');
+        } 
+    });  
+  });
+	</script>
+</head>
+<body>
+<header class="header">
+	<div class="logn">
+		<ul class="reg">
+			<marquee direction="left" width="300" id="marq">Dear guests, you are welcomed to dine with us at Good Food restaurant. We will serve you with the mouth watering dishes. Have a pleasant dining experience.</marquee>
+			<p id="name">Biriyani Heaven | JPR Cuisine</p>
+			<li class="login"><a href="login.html"> Login</a></li><span style="color: white; width: 5px;"> / </span>
+			<li class="login"><a href="register.html"> Registration</a></li>
+		</ul>
+	</div>
+</header>
+<div class="logo">
+	<img src="../images/logo.png">
+</div>
+<div class="search-bar">
+	<input type="text" id="search" placeholder="Search here...">
+	<button class="btn">Search</button>
+	<div class="logo2">
+	<img src="../images/logo2.png">
+</div>
+	</div>
+	<ul class="scroll">
+  <li><a href="homepage.html">Home</a></li>
+  <li><a href="#news">About</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dish Catagory</a>
+    <div class="dropdown-content">
+      <a href="#">Indian</a>
+      <a href="#">Chinese</a>
+      <a href="#">Tandoori</a>
+      <a href="#">Italian</a>
+    </div>
+  </li>
+  <li><a href="#home">Location & Timing</a></li>
+  <li><a href="#news">Feedback</a></li>
+</ul>
+
+	<div class="slider">
+
+<div class="slide">
+  <img src="../images/1.jpg" style="width:100%;">
+</div>
+
+<div class="slide">
+  <img src="../images/17.jpg" style="width:100%;">
+</div>
+
+<div class="slide">
+  <img src="../images/15.jpg" style="width:100%;">
+</div>
+
+<div class="slide">
+  <img src="../images/16.jpg" style="width:100%;">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active-slide", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active-slide";
+  setTimeout(showSlides, 3000);
+}
+</script>
+
+<div class="recipes1">
+<p class="food-type">FOOD</p>
+</div>
+<p>
+<section class="slider-slider">
+	<ul id="autoWidth" class="cs-hidden">
+   
+   
+    <li class="item-a">
+	<div class="div1">
+	<!-- <div class="slide-img"> -->
+	<img  src="../images/12.jpg" class="img7">
+	<p>Veg-Biriyani</p>
+	</div>
+	</div>		
+   </li> 
+
+   <li class="item-a">
+	<div class="div1">
+	<img  src="../images/13.jpg" class="img7">
+	<p>Non-Veg Biriyani</p>
+	</div>
+	</div>		
+   </li>
+   
+   
+    <li class="item-a">
+	<div class="div1">
+	<img  src="../images/8.jpg" class="img7">
+	<p>Veg Rice</p>
+	</div>
+	</div>		
+   </li> 
+
+   <li class="item-a">
+	<div class="div1">
+	<img  src="../images/9.jpg" class="img7">
+	<p>Non-Veg Rice</p>
+	</div>
+	</div>		
+   </li>
+   
+   
+    <li class="item-a">
+	<div class="div1">
+	<img  src="../images/10.jpg" class="img7">
+	<p>Veg Noodles</p>
+	</div>
+	</div>		
+   </li>
+
+
+       <li class="item-a">
+	<div class="div1">
+	<!-- <div class="slide-img"> -->
+	<img  src="../images/6.jpg" class="img7">
+	<p>Non-Veg Noodles</p>
+	</div>
+	</div>		
+   </li> 
+
+   <li class="item-a">
+	<div class="div1">
+	<img  src="../images/11.jpg" class="img7">
+	<p>Indian Rice</p>
+	</div>
+	</div>		
+   </li>
+</ul>
+	</section>
+
+
+	<div class="recipes1">
+<p class="food-type">FOOD</p>
+</div>
+<p>
+<section class="slider-slider">
+	<ul id="autoWidth1" class="cs-hidden">
+   
+   
+    <li class="item-a">
+	<div class="div1">
+	<!-- <div class="slide-img"> -->
+	<img  src="../images/12.jpg" class="img7">
+	<p>Veg-Biriyani</p>
+	</div>
+	</div>		
+   </li> 
+
+   <li class="item-a">
+	<div class="div1">
+	<img  src="../images/13.jpg" class="img7">
+	<p>Non-Veg Biriyani</p>
+	</div>
+	</div>		
+   </li>
+   
+   
+    <li class="item-a">
+	<div class="div1">
+	<img  src="../images/8.jpg" class="img7">
+	<p>Veg Rice</p>
+	</div>
+	</div>		
+   </li> 
+
+   <li class="item-a">
+	<div class="div1">
+	<img  src="../images/9.jpg" class="img7">
+	<p>Non-Veg Rice</p>
+	</div>
+	</div>		
+   </li>
+   
+   
+    <li class="item-a">
+	<div class="div1">
+	<img  src="../images/10.jpg" class="img7">
+	<p>Veg Noodles</p>
+	</div>
+	</div>		
+   </li>
+
+
+       <li class="item-a">
+	<div class="div1">
+	<!-- <div class="slide-img"> -->
+	<img  src="../images/6.jpg" class="img7">
+	<p>Non-Veg Noodles</p>
+	</div>
+	</div>		
+   </li> 
+
+   <li class="item-a">
+	<div class="div1">
+	<img  src="../images/11.jpg" class="img7">
+	<p>Indian Rice</p>
+	</div>
+	</div>		
+   </li>
+</ul>
+	</section>
+
+
+	<div class="footer">
+		<div class="logo1">
+	<img src="../images/logo3.png" class="logoimg">
+	<div id="abt">
+		<h4>ABOUT BIRIYANI HEAVEN</h4>
+		<ul>
+			<li id="abtt1">About Us</li>
+			<li id="abtt1">Contact Us</li>
+		</ul>
+	</div>
+	<div id="conct">
+		<h4>CONTACT INFO</h4>
+		<p>Biriyani Heaven</p>
+		<ul>
+			<p id="addr">No. 189/90, First Floor<br>T.H Road<br>Thiruvottiyur<br>Chennai-600019</p>
+		</ul>
+	</div>
+	<div id="contwith">
+		<h4 style="padding-bottom: 92px;">CONTACT US</h4>
+	<ul class="social_media">
+                      <li class="social_li">
+                      	<a href="#" class="facebook"></a>
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+              </li>
+                      <li class="social_li">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+              </li>
+                      <li class="social_li">
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              </li>
+              </ul>
+	</div>
+</div>
+	</div>
+    
+	<footer class="footer2">
+		<p id="copy">&copy; 2021 All Copyrights Reserved</p>
+	</footer>
+</body>
+</html>
